@@ -19,7 +19,7 @@ vim.opt.splitbelow = true -- force all horizontal splits to go below current win
 vim.opt.splitright = true -- force all vertical splits to go to the right of current window
 
 vim.g.slime_target = "neovim" -- send selected text to a neovim terminal
-vim.g.slime_paste_file = vim.env.XDG_RUNTIME_DIR .. "/slime" -- store runtime file for the slime in a temp directory
+vim.g.slime_paste_file = "/tmp/slime" -- store runtime file for the slime in a temp directory
 vim.cmd [[command JobID :echo b:terminal_job_id]] -- get job id for terminal window with :JobID
 
 

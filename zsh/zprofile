@@ -2,3 +2,7 @@
 if [[ ! $DISPLAY && $XDG_VTNR -eq 1 && -f "$XDG_CONFIG_HOME/X11/xinitrc" ]]; then
    exec startx "$XDG_CONFIG_HOME/X11/xinitrc"
 fi
+
+if [[ -x "/opt/homebrew/bin/brew" ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi

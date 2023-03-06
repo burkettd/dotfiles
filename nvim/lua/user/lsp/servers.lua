@@ -26,7 +26,7 @@ return {
   purescriptls = { install = true, on_attach = disable_formatting },
   rust_analyzer = { install = true },
   solargraph = { },
-  sumneko_lua = { install = true },
+  lua_ls = { install = true },
   terraformls = { install = true },
   tflint = { install = true },
   tsserver = { install = true, on_attach = disable_formatting },

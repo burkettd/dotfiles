@@ -11,7 +11,7 @@ export XDG_STATE_HOME="$HOME/.local/state"
 export DESKTOP_SESSION=xfce
 
 # Set default terminal to alacritty
-export TERM=alacritty
+export TERM=xterm-256color
 
 # Set default editor to neovim
 export EDITOR="nvim"

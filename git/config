@@ -1,8 +1,8 @@
 # vim: set filetype=gitconfig:
 
 [user]
-	name = disco-dave
-	email = 1124825-Disco-Dave@users.noreply.gitlab.com
+	name = David Burkett
+	email = david.burkett@vendr.com
 
 [init]
 	defaultBranch = main
