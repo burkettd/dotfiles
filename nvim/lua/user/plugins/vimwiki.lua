@@ -1,8 +1,10 @@
+vim.cmd([[
+
 let g:vimwiki_list = [
   \ {
-    \ 'path': '~/Documents/wiki/personal', 
-    \ 'auto_toc': 1, 
-    \ 'auto_diary_index': 1, 
+    \ 'path': '~/Documents/wiki/personal',
+    \ 'auto_toc': 1,
+    \ 'auto_diary_index': 1,
     \ 'diary_caption_level': -1,
     \ 'nested_syntaxes': {
       \ 'bash': 'bash',
@@ -30,9 +32,9 @@ let g:vimwiki_list = [
       \ }
   \ },
   \ {
-    \ 'path': '~/Documents/wiki/work', 
-    \ 'auto_toc': 1, 
-    \ 'auto_diary_index': 1, 
+    \ 'path': '~/Documents/wiki/work',
+    \ 'auto_toc': 1,
+    \ 'auto_diary_index': 1,
     \ 'diary_caption_level': -1,
     \ 'nested_syntaxes': {
       \ 'bash': 'bash',
@@ -78,3 +80,5 @@ function! VimwikiLinkHandler(link)
     return 1
   endif
 endfunction
+
+]])

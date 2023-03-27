@@ -94,15 +94,20 @@ export LESSHISTFILE=-
 
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
+export LDFLAGS="-L/opt/homebrew/opt/llvm@13/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm@13/include"
+
 # Set our global path variable.
 # https://wiki.archlinux.org/index.php/Zsh#Configuring_$PATH
 typeset -U PATH path
 path=(
+    "/opt/homebrew/opt/llvm@13/bin"
+    "$HOME/.local/scripts"
     "$XDG_BIN_HOME" 
     "$XDG_DATA_HOME/ghcup/env"
     "$XDG_DATA_HOME/cabal/bin"
     "$XDG_DATA_HOME/cargo/bin"
     "$XDG_DATA_HOME/npm/bin"
-    "$HOME/.local/scripts"
     "$path[@]")
+
 export PATH
